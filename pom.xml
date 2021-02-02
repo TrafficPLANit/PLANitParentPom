@@ -1,0 +1,403 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.planit.parentpom</groupId>
+	<artifactId>PLANitParentPom</artifactId>
+	<description>parent pomt file for all PLANit repos</description>
+	<version>0.1.1a1</version>
+	<packaging>pom</packaging>
+
+	<name>PLANitParentPom</name>
+
+	<!-- used by licensing plugin -->
+	<inceptionYear>2018</inceptionYear>
+	<organization>
+		<name>Mark Raadsen</name>
+		<url>https://trafficplanit.github.io/PLANitManual</url>
+	</organization>
+
+	<properties>
+		<!-- General properties -->
+		<planit.website.url>https://trafficplanit.github.io/PLANitManual</planit.website.url>
+		<planit.github.url>https:/www.github.com/trafficplanit/</planit.github.url>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<!-- Maven plugin versions -->
+		<maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
+		<maven.shade.plugin.version>3.2.4</maven.shade.plugin.version>
+		<maven.source.plugin.version>3.2.0</maven.source.plugin.version>
+		<maven.jar.plugin.version>3.2.0</maven.jar.plugin.version>
+		<maven.jaxb2.plugin.version>2.5.0</maven.jaxb2.plugin.version>
+		<maven.replacer.plugin.version>1.5.3</maven.replacer.plugin.version>
+		<maven.resources.plugin.version>3.1.0</maven.resources.plugin.version>
+		<maven.dependency.plugin.version>3.1.2</maven.dependency.plugin.version>
+
+		<!-- Maven plugin properties -->
+		<maven.compiler.java.version>11</maven.compiler.java.version>
+
+		<!-- PLANit repository versions -->
+		<planitutils.version>${project.version}</planitutils.version>
+		<planit.version>${project.version}</planit.version>
+		<planitio.version>${project.version}</planitio.version>
+		<planitxml.version>${project.version}</planitxml.version>
+		<planittntp.version>${project.version}</planittntp.version>
+		<planitosm.version>${project.version}</planitosm.version>
+		<planitmatsim.version>${project.version}</planitmatsim.version>
+		<planitj2py.version>${project.version}</planitj2py.version>
+
+		<!-- thrid party repository versions -->
+		<djutils.version>1.04.05</djutils.version>
+		<geotools.version>24.0</geotools.version>
+		<ojalgo.version>46.3.0</ojalgo.version>
+		<py4j.version>0.10.9</py4j.version>
+		<org.apache.commons.csv.version>1.6</org.apache.commons.csv.version>
+		<org.apache.commons.collections4.version>4.4</org.apache.commons.collections4.version>
+		<osm4j-core.version>0.1.0</osm4j-core.version>
+		<osm4j-xml.version>0.1.3</osm4j-xml.version>
+		<osm4j-pbf.version>0.1.0</osm4j-pbf.version>
+
+		<!-- core Java versions -->
+		<javax.version>1.3.2</javax.version>
+		<junit.version>4.13-beta-2</junit.version>
+
+		<!-- Special properties to configure compatibility/compilation issues -->
+		<!-- TODO: A new release of the maven-jaxb2-plugin, 0.14.1, is expected 
+			soon. Upgrade to the new release when it becomes available Why: because we 
+			now have to manually override the jaxb version used to 2.3.1. to avoid illegal 
+			reflective access warnings (see dependencies for javax.xml.bind and org.glassfish.jaxb) 
+			When upgraded remove these dependencies since they should no longer be needed -->
+		<maven.jaxb2.plugin.version>0.14.0</maven.jaxb2.plugin.version>
+		<javax.xml.bind.version>2.3.1</javax.xml.bind.version>
+		<org.glassfish.jaxb.version>2.3.1</org.glassfish.jaxb.version>
+
+	</properties>
+
+	<!-- Potential dependencies used by children. When no dependency specified, 
+		it is not injected. If no version or is specified, they inherit the version 
+		defined here -->
+	<dependencyManagement>
+		<dependencies>
+
+			<!-- PROJECT DEPENDENCIES -->
+
+			<dependency>
+				<groupId>org.planit.utils</groupId>
+				<artifactId>PLANitUtils</artifactId>
+				<version>${planitutils.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.planit</groupId>
+				<artifactId>PLANit</artifactId>
+				<version>${planit.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.planit.io</groupId>
+				<artifactId>PLANitIO</artifactId>
+				<version>${planitio.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.planit.xml</groupId>
+				<artifactId>PLANitXMLGenerator</artifactId>
+				<version>${planitxml.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.planit.tntp</groupId>
+				<artifactId>PLANitTNTP</artifactId>
+				<version>${planittntp.version}</version>
+			</dependency>
+			
+      <dependency>
+        <groupId>org.planit.osm</groupId>
+        <artifactId>PLANitOSM</artifactId>
+        <version>${planitosm.version}</version>
+      </dependency>		
+      
+      <dependency>
+        <groupId>org.planit.matsim</groupId>
+        <artifactId>PLANitMatsim</artifactId>
+        <version>${planitmatsim.version}</version>
+      </dependency>   
+
+			<dependency>
+				<groupId>org.planit.python</groupId>
+				<artifactId>PLANitJ2Py</artifactId>
+				<version>${planitj2py.version}</version>
+			</dependency>
+
+			<!-- EXTERNAL DEPENDENCIES -->
+
+			<dependency>
+				<groupId>org.djutils</groupId>
+				<artifactId>djutils</artifactId>
+				<version>${djutils.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.geotools</groupId>
+				<artifactId>gt-geometry</artifactId>
+				<version>${geotools.version}</version>
+			</dependency>
+			
+			<!--  required for EPSG based conversions between CRS (converters)
+			      this database contains all the CRS specific information for these conversions -->
+			<dependency>
+			    <groupId>org.geotools</groupId>
+			    <artifactId>gt-epsg-hsql</artifactId>
+			    <version>${geotools.version}</version>
+			</dependency>			
+
+			<dependency>
+				<groupId>org.ojalgo</groupId>
+				<artifactId>ojalgo</artifactId>
+				<version>${ojalgo.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-csv</artifactId>
+				<version>${org.apache.commons.csv.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-collections4</artifactId>
+				<version>${org.apache.commons.collections4.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>net.sf.py4j</groupId>
+				<artifactId>py4j</artifactId>
+				<version>${py4j.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<optional>true</optional>
+			</dependency>
+			
+			<!-- https://mvnrepository.com/artifact/de.topobyte/osm4j-core -->
+			<dependency>
+			    <groupId>de.topobyte</groupId>
+			    <artifactId>osm4j-core</artifactId>
+			    <version>${osm4j-core.version}</version>
+			</dependency>		
+			
+			<!-- https://mvnrepository.com/artifact/de.topobyte/osm4j-xml -->
+			<dependency>
+			    <groupId>de.topobyte</groupId>
+			    <artifactId>osm4j-xml</artifactId>
+			    <version>${osm4j-xml.version}</version>
+			</dependency>		
+			
+		    <dependency>
+		        <groupId>de.topobyte</groupId>
+		        <artifactId>osm4j-pbf</artifactId>
+		        <version>${osm4j-pbf.version}</version>         
+		    </dependency> 			
+
+			<!-- version 0.0.14 with issue requiring overwriting version for below 
+				two dependencies -->
+			<dependency>
+				<groupId>org.jvnet.jaxb2.maven2</groupId>
+				<artifactId>maven-jaxb2-plugin</artifactId>
+				<version>${maven.jaxb2.plugin.version}</version>
+			</dependency>
+
+			<!-- TODO: remove once we upgraded to 0.14.1 for jaxb2 plugin -->
+			<dependency>
+				<groupId>javax.xml.bind</groupId>
+				<artifactId>jaxb-api</artifactId>
+				<version>${javax.xml.bind.version}</version>
+			</dependency>
+
+			<!-- TODO: remove once we upgraded to 0.14.1 for jaxb2 plugin -->
+			<dependency>
+				<groupId>org.glassfish.jaxb</groupId>
+				<artifactId>jaxb-runtime</artifactId>
+				<version>${org.glassfish.jaxb.version}</version>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+
+	<!-- dependencies that are forcibly added to all children -->
+	<dependencies>
+
+		<!-- EXTERNAL DEPENDENCIES -->
+
+
+	</dependencies>
+
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+
+		<pluginManagement>
+			<!-- configure plugins without executing them -->
+			<plugins>
+
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>${maven.source.plugin.version}</version>
+					<executions>
+						<execution>
+							<id>bundle-sources</id>
+							<phase>package</phase>
+							<goals>
+								<!-- produce source artifact for main project sources so we can generate 
+									javadocs -->
+								<goal>jar-no-fork</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>${maven.resources.plugin.version}</version>
+					<executions>
+						<execution>
+							<id>copy-resources</id>
+							<phase>validate</phase>
+							<goals>
+								<goal>copy-resources</goal>
+							</goals>
+							<configuration>
+								<outputDirectory>${project.build.directory}</outputDirectory>
+								<resources>
+									<resource>
+										<directory>resources</directory>
+										<filtering>true</filtering>
+									</resource>
+								</resources>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>${maven.jar.plugin.version}</version>
+					<configuration>
+						<archive>
+							<manifest>
+								<addClasspath>true</addClasspath>
+								<classpathPrefix>lib/</classpathPrefix>
+							</manifest>
+							<manifestEntries>
+								<Class-Path>.</Class-Path>
+							</manifestEntries>
+						</archive>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-dependency-plugin</artifactId>
+					<version>${maven.dependency.plugin.version}</version>
+					<executions>
+						<execution>
+							<id>copy-dependencies</id>
+							<phase>prepare-package</phase>
+							<goals>
+								<goal>copy-dependencies</goal>
+							</goals>
+							<configuration>
+								<outputDirectory>${project.build.directory}/lib</outputDirectory>
+								<overWriteReleases>false</overWriteReleases>
+								<overWriteSnapshots>false</overWriteSnapshots>
+								<overWriteIfNewer>true</overWriteIfNewer>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven.compiler.plugin.version}</version>
+					<configuration>
+						<source>${maven.compiler.java.version}</source>
+						<target>${maven.compiler.java.version}</target>
+						<release>${maven.compiler.java.version}</release>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<!-- plugin execution -->
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<name>djutils Public Repository</name>
+			<id>djutils</id>
+			<url>https://djutils.org/maven</url>
+		</repository>
+		<repository>
+			<id>osgeo</id>
+			<name>Open Source Geospatial Foundation Repository</name>
+			<url>https://repo.osgeo.org/repository/release/</url>
+		</repository>
+		<repository>
+			<id>maven2-repository.dev.java.net</id>
+			<name>Java.net repository</name>
+			<url>http://download.java.net/maven/2</url>
+		</repository>
+		<repository>
+			<id>maven2-repository.maven.org</id>
+			<name>Central repository</name>
+			<url>https://repo1.maven.org/maven2/</url>
+		</repository>
+		
+		<!-- OSM4j dependencies repositories -->
+		<repository>
+			<id>mvn.topobyte.de</id>
+			<name>Topobyte Repository</name>
+			<url>https://mvn.topobyte.de</url>
+		</repository>
+		<repository>
+			<id>mvn.slimjars.com</id>
+			<name>Slimjars Repository</name>
+			<url>http://mvn.slimjars.com/</url>
+		</repository>						
+
+	</repositories>
+	
+	<developers>
+		<developer>
+			<id>markr</id>
+			<name>Mark Raadsen</name>
+			<email>mark.raadsen@sydney.edu.au</email>
+			<organization>Sydney University, Australia</organization>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+				<role>maintainance</role>
+			</roles>
+		</developer>
+	</developers>
+
+</project>
