@@ -6,7 +6,7 @@
 	<groupId>org.planit.parentpom</groupId>
 	<artifactId>PLANitParentPom</artifactId>
 	<description>parent pomt file for all PLANit repos</description>
-	<version>0.2.0</version>
+	<version>0.2.1a1</version>
 	<packaging>pom</packaging>
 
 	<name>PLANitParentPom</name>
