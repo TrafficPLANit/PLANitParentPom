@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.planit.parentpom</groupId>
-	<artifactId>PLANitParentPom</artifactId>
-	<description>parent pomt file for all PLANit repos</description>
+	<artifactId>planit-parentpom</artifactId>
+	<description>parent pom file for all PLANit repos</description>
 	<version>0.2.1a1</version>
 	<packaging>pom</packaging>
 
@@ -59,7 +59,7 @@
 		<osm4j-pbf.version>0.1.0</osm4j-pbf.version>
 		<xmlunit.version>2.2.1</xmlunit.version>
 		<hamcrest_test.version>2.1</hamcrest_test.version>
-		
+
 		<!-- core Java versions -->
 		<javax.version>1.3.2</javax.version>
 		<junit.version>4.13-beta-2</junit.version>
@@ -86,49 +86,49 @@
 
 			<dependency>
 				<groupId>org.planit.utils</groupId>
-				<artifactId>PLANitUtils</artifactId>
+				<artifactId>planit-utils</artifactId>
 				<version>${planitutils.version}</version>
 			</dependency>
 
 			<dependency>
 				<groupId>org.planit</groupId>
-				<artifactId>PLANit</artifactId>
+				<artifactId>planit-core</artifactId>
 				<version>${planit.version}</version>
 			</dependency>
 
 			<dependency>
 				<groupId>org.planit.io</groupId>
-				<artifactId>PLANitIO</artifactId>
+				<artifactId>planit-io</artifactId>
 				<version>${planitio.version}</version>
 			</dependency>
 
 			<dependency>
 				<groupId>org.planit.xml</groupId>
-				<artifactId>PLANitXMLGenerator</artifactId>
+				<artifactId>planit-xmlgenerator</artifactId>
 				<version>${planitxml.version}</version>
 			</dependency>
 
 			<dependency>
 				<groupId>org.planit.tntp</groupId>
-				<artifactId>PLANitTNTP</artifactId>
+				<artifactId>planit-tntp</artifactId>
 				<version>${planittntp.version}</version>
 			</dependency>
-			
-      <dependency>
-        <groupId>org.planit.osm</groupId>
-        <artifactId>PLANitOSM</artifactId>
-        <version>${planitosm.version}</version>
-      </dependency>		
-      
-      <dependency>
-        <groupId>org.planit.matsim</groupId>
-        <artifactId>PLANitMatsim</artifactId>
-        <version>${planitmatsim.version}</version>
-      </dependency>   
+
+			<dependency>
+				<groupId>org.planit.osm</groupId>
+				<artifactId>planit-osm</artifactId>
+				<version>${planitosm.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.planit.matsim</groupId>
+				<artifactId>planit-matsim</artifactId>
+				<version>${planitmatsim.version}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>org.planit.python</groupId>
-				<artifactId>PLANitJ2Py</artifactId>
+				<artifactId>planit-j2py</artifactId>
 				<version>${planitj2py.version}</version>
 			</dependency>
 
@@ -145,14 +145,14 @@
 				<artifactId>gt-geometry</artifactId>
 				<version>${geotools.version}</version>
 			</dependency>
-			
-			<!--  required for EPSG based conversions between CRS (converters)
-			      this database contains all the CRS specific information for these conversions -->
+
+			<!-- required for EPSG based conversions between CRS (converters) this 
+				database contains all the CRS specific information for these conversions -->
 			<dependency>
-			    <groupId>org.geotools</groupId>
-			    <artifactId>gt-epsg-hsql</artifactId>
-			    <version>${geotools.version}</version>
-			</dependency>			
+				<groupId>org.geotools</groupId>
+				<artifactId>gt-epsg-hsql</artifactId>
+				<version>${geotools.version}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>org.ojalgo</groupId>
@@ -184,47 +184,47 @@
 				<version>${junit.version}</version>
 				<optional>true</optional>
 			</dependency>
-			
-      <dependency>
-          <groupId>org.xmlunit</groupId>
-          <artifactId>xmlunit-core</artifactId>
-          <version>${xmlunit.version}</version>
-          <scope>test</scope>
-      </dependency>   
-      
-      <dependency>
-        <groupId>org.xmlunit</groupId>
-        <artifactId>xmlunit-matchers</artifactId>
-        <version>${xmlunit.version}</version>
-      </dependency>		
-      
-      <!-- used for assertThat assertions instead of deprecated jUnit one  -->
+
 			<dependency>
-			    <groupId>org.hamcrest</groupId>
-			    <artifactId>hamcrest</artifactId>
-			    <version>${hamcrest_test.version}</version>
-			    <scope>test</scope>
-			</dependency>      	
-			
+				<groupId>org.xmlunit</groupId>
+				<artifactId>xmlunit-core</artifactId>
+				<version>${xmlunit.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.xmlunit</groupId>
+				<artifactId>xmlunit-matchers</artifactId>
+				<version>${xmlunit.version}</version>
+			</dependency>
+
+			<!-- used for assertThat assertions instead of deprecated jUnit one -->
+			<dependency>
+				<groupId>org.hamcrest</groupId>
+				<artifactId>hamcrest</artifactId>
+				<version>${hamcrest_test.version}</version>
+				<scope>test</scope>
+			</dependency>
+
 			<!-- https://mvnrepository.com/artifact/de.topobyte/osm4j-core -->
 			<dependency>
-			    <groupId>de.topobyte</groupId>
-			    <artifactId>osm4j-core</artifactId>
-			    <version>${osm4j-core.version}</version>
-			</dependency>		
-			
+				<groupId>de.topobyte</groupId>
+				<artifactId>osm4j-core</artifactId>
+				<version>${osm4j-core.version}</version>
+			</dependency>
+
 			<!-- https://mvnrepository.com/artifact/de.topobyte/osm4j-xml -->
 			<dependency>
-			    <groupId>de.topobyte</groupId>
-			    <artifactId>osm4j-xml</artifactId>
-			    <version>${osm4j-xml.version}</version>
-			</dependency>		
-			
-	    <dependency>
-	        <groupId>de.topobyte</groupId>
-	        <artifactId>osm4j-pbf</artifactId>
-	        <version>${osm4j-pbf.version}</version>         
-	    </dependency>	      			
+				<groupId>de.topobyte</groupId>
+				<artifactId>osm4j-xml</artifactId>
+				<version>${osm4j-xml.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>de.topobyte</groupId>
+				<artifactId>osm4j-pbf</artifactId>
+				<version>${osm4j-pbf.version}</version>
+			</dependency>
 
 			<!-- version 0.0.14 with issue requiring overwriting version for below 
 				two dependencies -->
@@ -394,7 +394,7 @@
 			<name>Central repository</name>
 			<url>https://repo1.maven.org/maven2/</url>
 		</repository>
-		
+
 		<!-- OSM4j dependencies repositories -->
 		<repository>
 			<id>mvn.topobyte.de</id>
@@ -405,10 +405,10 @@
 			<id>mvn.slimjars.com</id>
 			<name>Slimjars Repository</name>
 			<url>http://mvn.slimjars.com/</url>
-		</repository>						
+		</repository>
 
 	</repositories>
-	
+
 	<developers>
 		<developer>
 			<id>markr</id>
