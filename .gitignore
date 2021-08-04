@@ -1,9 +1,6 @@
 /.settings
 .project
-/src
-/src
-/src
-/src
+/PLANit*
 /src
 /dependency-reduced-pom.xml
 /logs
