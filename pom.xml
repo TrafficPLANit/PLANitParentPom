@@ -14,13 +14,13 @@
 	<!-- used by licensing plugin -->
 	<inceptionYear>2018</inceptionYear>
 	<organization>
-		<name>Mark Raadsen</name>
-		<url>https://trafficplanit.github.io/PLANitManual</url>
+		<name>PLANit</name>
+		<url>http://www.goplanit.org</url>
 	</organization>
 
 	<properties>
 		<!-- General properties -->
-		<planit.website.url>https://trafficplanit.github.io/PLANitManual</planit.website.url>
+		<planit.website.url>http://www.goplanit.org</planit.website.url>
 		<planit.github.url>https:/www.github.com/trafficplanit/</planit.github.url>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
