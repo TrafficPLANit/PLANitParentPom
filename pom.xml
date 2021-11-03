@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.planit.parentpom</groupId>
+	<groupId>org.goplanit.parentpom</groupId>
 	<artifactId>planit-parentpom</artifactId>
 	<description>parent pom file for all PLANit repos</description>
 	<version>0.2.1a1</version>
@@ -86,49 +86,49 @@
 			<!-- PROJECT DEPENDENCIES -->
 
 			<dependency>
-				<groupId>org.planit.utils</groupId>
+				<groupId>org.goplanit.utils</groupId>
 				<artifactId>planit-utils</artifactId>
 				<version>${planitutils.version}</version>
 			</dependency>
 
 			<dependency>
-				<groupId>org.planit</groupId>
+				<groupId>org.goplanit</groupId>
 				<artifactId>planit-core</artifactId>
 				<version>${planit.version}</version>
 			</dependency>
 
 			<dependency>
-				<groupId>org.planit.io</groupId>
+				<groupId>org.goplanit.io</groupId>
 				<artifactId>planit-io</artifactId>
 				<version>${planitio.version}</version>
 			</dependency>
 
 			<dependency>
-				<groupId>org.planit.xml</groupId>
+				<groupId>org.goplanit.xml</groupId>
 				<artifactId>planit-xmlgenerator</artifactId>
 				<version>${planitxml.version}</version>
 			</dependency>
 
 			<dependency>
-				<groupId>org.planit.tntp</groupId>
+				<groupId>org.goplanit.tntp</groupId>
 				<artifactId>planit-tntp</artifactId>
 				<version>${planittntp.version}</version>
 			</dependency>
 
 			<dependency>
-				<groupId>org.planit.osm</groupId>
+				<groupId>org.goplanit.osm</groupId>
 				<artifactId>planit-osm</artifactId>
 				<version>${planitosm.version}</version>
 			</dependency>
 
 			<dependency>
-				<groupId>org.planit.matsim</groupId>
+				<groupId>org.goplanit.matsim</groupId>
 				<artifactId>planit-matsim</artifactId>
 				<version>${planitmatsim.version}</version>
 			</dependency>
 
 			<dependency>
-				<groupId>org.planit.python</groupId>
+				<groupId>org.goplanit.python</groupId>
 				<artifactId>planit-j2py</artifactId>
 				<version>${planitj2py.version}</version>
 			</dependency>
@@ -407,8 +407,7 @@
 		<developer>
 			<id>markr</id>
 			<name>Mark Raadsen</name>
-			<email>mark.raadsen@sydney.edu.au</email>
-			<organization>Sydney University, Australia</organization>
+			<email>infon@goplanit.org</email>
 			<roles>
 				<role>architect</role>
 				<role>developer</role>
