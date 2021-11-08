@@ -6,7 +6,7 @@
 	<groupId>org.goplanit.parentpom</groupId>
 	<artifactId>planit-parentpom</artifactId>
 	<description>parent pom file for all PLANit repos</description>
-	<version>0.2.1a1</version>
+	<version>0.3.0</version>
 	<packaging>pom</packaging>
 
 	<name>PLANitParentPom</name>
@@ -91,6 +91,12 @@
 				<artifactId>planit-utils</artifactId>
 				<version>${planitutils.version}</version>
 			</dependency>
+			
+      <dependency>
+        <groupId>org.goplanit.gtfs</groupId>
+        <artifactId>planit-gtfs</artifactId>
+        <version>${planitgtfs.version}</version>
+      </dependency>			
 
 			<dependency>
 				<groupId>org.goplanit</groupId>
