@@ -20,7 +20,7 @@
 
 	<properties>
 		<!-- General properties -->
-		<planit.website.url>http://www.goplanit.org</planit.website.url>
+		<planit.website.url>https://www.goplanit.org</planit.website.url>
 		<planit.github.url>https:/www.github.com/trafficplanit/</planit.github.url>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
@@ -396,11 +396,6 @@
 			<url>https://repo.osgeo.org/repository/release/</url>
 		</repository>
 		<repository>
-			<id>maven2-repository.dev.java.net</id>
-			<name>Java.net repository</name>
-			<url>http://download.java.net/maven/2</url>
-		</repository>
-		<repository>
 			<id>maven2-repository.maven.org</id>
 			<name>Central repository</name>
 			<url>https://repo1.maven.org/maven2/</url>
@@ -415,7 +410,7 @@
 		<repository>
 			<id>mvn.slimjars.com</id>
 			<name>Slimjars Repository</name>
-			<url>http://mvn.slimjars.com/</url>
+			<url>https://mvn.slimjars.com/</url>
 		</repository>
 		
 		<!-- PLANit repository -->
