@@ -49,10 +49,10 @@
 		<planitgtfs.version>${project.version}</planitgtfs.version>
 
 		<!-- third party repository versions -->
-		<geotools.version>24.0</geotools.version>
+		<geotools.version>24.2</geotools.version>
 		<ojalgo.version>46.3.0</ojalgo.version>
 		<py4j.version>0.10.9</py4j.version>
-		<org.apache.commons.csv.version>1.6</org.apache.commons.csv.version>
+		<org.apache.commons.csv.version>1.8</org.apache.commons.csv.version>
 		<org.apache.commons.collections4.version>4.4</org.apache.commons.collections4.version>
 		<org.apache.commons.io.version>2.11.0</org.apache.commons.io.version>
 		<osm4j-core.version>0.1.0</osm4j-core.version>

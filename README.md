@@ -12,7 +12,7 @@ The `pom.xml` in this repository is references by all PLANit projects as their p
 
 It also contains dependency management and plugin management sections for default configurations of these dependencies and plugins to minimise the configuration in each of the child poms
 
-## Deployment
+## Deployment 
 
 Distribution management is setup in this parent pom such that Maven can deploy child builds appropriately. To do so ensure that you setup your credientials correctly in your settings.xml as otherwise any upload will fail.
 
