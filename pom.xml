@@ -309,24 +309,7 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-resources-plugin</artifactId>
 					<version>${maven.resources.plugin.version}</version>
-					<executions>
-						<execution>
-							<id>copy-resources</id>
-							<phase>validate</phase>
-							<goals>
-								<goal>copy-resources</goal>
-							</goals>
-							<configuration>
-								<outputDirectory>${project.build.directory}</outputDirectory>
-								<resources>
-									<resource>
-										<directory>main/resources</directory>
-										<filtering>true</filtering>
-									</resource>
-								</resources>
-							</configuration>
-						</execution>
-					</executions>
+					<!-- let derived projects configure as desired, rely on default behaviour otherwise -->
 				</plugin>
 
 				<plugin>
