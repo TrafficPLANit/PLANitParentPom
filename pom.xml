@@ -415,10 +415,10 @@
 		
 		<!-- PLANit repository -->
 		<repository>
-      <id>planit-repository.goplanit.org</id>
-      <name>PLANit Repository</name>
-      <url>https://repository.goplanit.org</url>
-    </repository>		
+		  <id>planit-repository.goplanit.org</id>
+		  <name>PLANit Repository</name>
+		  <url>https://repository.goplanit.org</url>
+		</repository>
 	</repositories>
 	
   <distributionManagement>
@@ -436,7 +436,7 @@
 			<roles>
 				<role>architect</role>
 				<role>developer</role>
-				<role>maintainance</role>
+				<role>maintenance</role>
 			</roles>
 		</developer>
 	</developers>

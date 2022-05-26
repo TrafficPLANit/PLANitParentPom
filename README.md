@@ -1,4 +1,6 @@
 # PLANitParentPom
+![Master Branch](https://github.com/TrafficPLANit/PLANitPArentPom/actions/workflows/maven_master.yml/badge.svg?branch=master)
+![Develop Branch](https://github.com/TrafficPLANit/PLANitPArentPom/actions/workflows/maven_develop.yml/badge.svg?branch=develop)
 
 Repository solely in existence to manager the master , a.k.a. parent `pom.xml` from which all child projects of PLANit derive to obtain their dependency versions
 
