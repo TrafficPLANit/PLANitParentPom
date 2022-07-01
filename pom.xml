@@ -91,12 +91,12 @@
 				<artifactId>planit-utils</artifactId>
 				<version>${planitutils.version}</version>
 			</dependency>
-			
-      <dependency>
-        <groupId>org.goplanit.gtfs</groupId>
-        <artifactId>planit-gtfs</artifactId>
-        <version>${planitgtfs.version}</version>
-      </dependency>			
+
+			<dependency>
+				<groupId>org.goplanit.gtfs</groupId>
+				<artifactId>planit-gtfs</artifactId>
+				<version>${planitgtfs.version}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>org.goplanit</groupId>
