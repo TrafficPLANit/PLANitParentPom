@@ -71,7 +71,7 @@
 			soon. Upgrade to the new release when it becomes available Why: because we 
 			now have to manually override the jaxb version used to 2.3.1. to avoid illegal 
 			reflective access warnings (see dependencies for javax.xml.bind and org.glassfish.jaxb) 
-			When upgraded remove these dependencies since they should no longer be needed -->
+			When upgraded remove these dependencies since they should no longer be needed  -->
 		<maven.jaxb2.plugin.version>0.14.0</maven.jaxb2.plugin.version>
 		<javax.xml.bind.version>2.3.1</javax.xml.bind.version>
 		<org.glassfish.jaxb.version>2.3.1</org.glassfish.jaxb.version>
