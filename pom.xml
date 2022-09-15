@@ -49,7 +49,7 @@
 		<planitgtfs.version>${project.version}</planitgtfs.version>
 
 		<!-- third party repository versions -->
-		<geotools.version>24.2</geotools.version>
+		<geotools.version>24.6</geotools.version>
 		<ojalgo.version>46.3.0</ojalgo.version>
 		<py4j.version>0.10.9</py4j.version>
 		<org.apache.commons.csv.version>1.8</org.apache.commons.csv.version>
