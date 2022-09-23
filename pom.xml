@@ -65,16 +65,7 @@
 		<!-- core Java versions -->
 		<javax.version>1.3.2</javax.version>
 		<junit.version>4.13-beta-2</junit.version>
-
-		<!-- Special properties to configure compatibility/compilation issues -->
-		<!-- TODO: A new release of the maven-jaxb2-plugin, 0.14.1, is expected 
-			soon. Upgrade to the new release when it becomes available Why: because we 
-			now have to manually override the jaxb version used to 2.3.1. to avoid illegal 
-			reflective access warnings (see dependencies for javax.xml.bind and org.glassfish.jaxb) 
-			When upgraded remove these dependencies since they should no longer be needed  -->
-		<maven.jaxb2.plugin.version>0.14.0</maven.jaxb2.plugin.version>
-		<javax.xml.bind.version>2.3.1</javax.xml.bind.version>
-		<org.glassfish.jaxb.version>2.3.1</org.glassfish.jaxb.version>
+		<maven.jaxb2.plugin.version>0.15.1</maven.jaxb2.plugin.version>
 
 	</properties>
 
@@ -241,20 +232,6 @@
 				<version>${maven.jaxb2.plugin.version}</version>
 			</dependency>
 
-			<!-- TODO: remove once we upgraded to 0.14.1 for jaxb2 plugin -->
-			<dependency>
-				<groupId>javax.xml.bind</groupId>
-				<artifactId>jaxb-api</artifactId>
-				<version>${javax.xml.bind.version}</version>
-			</dependency>
-
-			<!-- TODO: remove once we upgraded to 0.14.1 for jaxb2 plugin -->
-			<dependency>
-				<groupId>org.glassfish.jaxb</groupId>
-				<artifactId>jaxb-runtime</artifactId>
-				<version>${org.glassfish.jaxb.version}</version>
-			</dependency>
-
 		</dependencies>
 	</dependencyManagement>
 
@@ -286,8 +263,6 @@
 		<pluginManagement>
 			<!-- configure plugins without executing them -->
 			<plugins>
-
-
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-source-plugin</artifactId>
