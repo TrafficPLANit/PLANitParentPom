@@ -165,11 +165,11 @@
 				<version>${org.apache.commons.collections4.version}</version>
 			</dependency>
 			
-    <dependency>
-      <groupId>commons-io</groupId>
-      <artifactId>commons-io</artifactId>
-      <version>${org.apache.commons.io.version}</version>
-    </dependency>			
+			<dependency>
+			  <groupId>commons-io</groupId>
+			  <artifactId>commons-io</artifactId>
+			  <version>${org.apache.commons.io.version}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>net.sf.py4j</groupId>
@@ -224,8 +224,7 @@
 				<artifactId>osm4j-pbf</artifactId>
 				<version>${osm4j-pbf.version}</version>
 			</dependency>
-			
-			<!-- version 0.0.14 with issue requiring overwriting version for below two dependencies -->
+
 			<dependency>
 				<groupId>org.jvnet.jaxb2.maven2</groupId>
 				<artifactId>maven-jaxb2-plugin</artifactId>
