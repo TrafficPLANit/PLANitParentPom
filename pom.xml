@@ -140,6 +140,13 @@
 				<version>${geotools.version}</version>
 			</dependency>
 
+			<!-- required if shape file datastore is needed, otherwise not available to internal finder -->
+			<dependency>
+				<groupId>org.geotools</groupId>
+				<artifactId>gt-shapefile</artifactId>
+				<version>${geotools.version}</version>
+			</dependency>
+
 			<!-- required for EPSG based conversions between CRS (converters) this 
 				database contains all the CRS specific information for these conversions -->
 			<dependency>
