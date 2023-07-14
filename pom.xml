@@ -43,7 +43,7 @@
 		<planitio.version>${project.version}</planitio.version>
 		<planitxml.version>${project.version}</planitxml.version>
 		<planittntp.version>${project.version}</planittntp.version>
-		<planitosm.version>0.3.1a1</planitosm.version>
+		<planitosm.version>${project.version}</planitosm.version>
 		<planitmatsim.version>0.3.1a1</planitmatsim.version>
 		<planitj2py.version>0.3.1a1</planitj2py.version>
 		<planitgtfs.version>0.3.1a1</planitgtfs.version>
