@@ -46,7 +46,7 @@
 		<planitosm.version>${project.version}</planitosm.version>
 		<planitmatsim.version>${project.version}</planitmatsim.version>
 		<planitgtfs.version>${project.version}</planitgtfs.version>
-		<planitgeoio.version>0.3.1a1</planitgeoio.version>
+		<planitgeoio.version>${project.version}</planitgeoio.version>
 		<planitj2py.version>0.3.1a1</planitj2py.version>
 
 		<!-- third party repository versions -->
