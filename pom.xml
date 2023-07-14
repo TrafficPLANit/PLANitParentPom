@@ -6,7 +6,7 @@
 	<groupId>org.goplanit.parentpom</groupId>
 	<artifactId>planit-parentpom</artifactId>
 	<description>parent pom file for all PLANit repos</description>
-	<version>0.3.1a1</version>
+	<version>0.4.0</version>
 	<packaging>pom</packaging>
 
 	<name>PLANitParentPom</name>
@@ -38,15 +38,15 @@
 		<maven.compiler.java.version>11</maven.compiler.java.version>
 
 		<!-- PLANit repository versions -->
-		<planitutils.version>${project.version}</planitutils.version>
-		<planit.version>${project.version}</planit.version>
-		<planitio.version>${project.version}</planitio.version>
-		<planitxml.version>${project.version}</planitxml.version>
-		<planittntp.version>${project.version}</planittntp.version>
-		<planitosm.version>${project.version}</planitosm.version>
-		<planitmatsim.version>${project.version}</planitmatsim.version>
-		<planitj2py.version>${project.version}</planitj2py.version>
-		<planitgtfs.version>${project.version}</planitgtfs.version>
+		<planitutils.version>0.3.1a1</planitutils.version>
+		<planit.version>0.3.1a1</planit.version>
+		<planitio.version>0.3.1a1</planitio.version>
+		<planitxml.version>0.3.1a1</planitxml.version>
+		<planittntp.version>0.3.1a1</planittntp.version>
+		<planitosm.version>0.3.1a1</planitosm.version>
+		<planitmatsim.version>0.3.1a1</planitmatsim.version>
+		<planitj2py.version>0.3.1a1</planitj2py.version>
+		<planitgtfs.version>0.3.1a1</planitgtfs.version>
 
 		<!-- third party repository versions -->
 		<geotools.version>24.6</geotools.version>
@@ -189,8 +189,6 @@
 				<groupId>org.junit.jupiter</groupId>
 				<artifactId>junit-jupiter-engine</artifactId>
 				<version>${junit.version}</version>
-				<scope>test</scope>
-				<optional>true</optional>
 			</dependency>
 
 			<dependency>
