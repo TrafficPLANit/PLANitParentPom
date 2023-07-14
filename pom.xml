@@ -38,8 +38,8 @@
 		<maven.compiler.java.version>11</maven.compiler.java.version>
 
 		<!-- PLANit repository versions -->
-		<planitutils.version>0.4.0</planitutils.version>
-		<planit.version>0.3.1a1</planit.version>
+		<planitutils.version>${project.version}</planitutils.version>
+		<planit.version>${project.version}</planit.version>
 		<planitio.version>0.3.1a1</planitio.version>
 		<planitxml.version>0.3.1a1</planitxml.version>
 		<planittntp.version>0.3.1a1</planittntp.version>
