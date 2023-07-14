@@ -40,7 +40,7 @@
 		<!-- PLANit repository versions -->
 		<planitutils.version>${project.version}</planitutils.version>
 		<planit.version>${project.version}</planit.version>
-		<planitio.version>0.3.1a1</planitio.version>
+		<planitio.version>${project.version}</planitio.version>
 		<planitxml.version>0.3.1a1</planitxml.version>
 		<planittntp.version>0.3.1a1</planittntp.version>
 		<planitosm.version>0.3.1a1</planitosm.version>
