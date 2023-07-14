@@ -47,7 +47,7 @@
 		<planitmatsim.version>${project.version}</planitmatsim.version>
 		<planitgtfs.version>${project.version}</planitgtfs.version>
 		<planitgeoio.version>${project.version}</planitgeoio.version>
-		<planitj2py.version>0.3.1a1</planitj2py.version>
+		<planitj2py.version>${project.version}</planitj2py.version>
 
 		<!-- third party repository versions -->
 		<geotools.version>24.6</geotools.version>
