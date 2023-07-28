@@ -53,9 +53,11 @@
 		<geotools.version>24.6</geotools.version>
 		<ojalgo.version>46.3.0</ojalgo.version>
 		<py4j.version>0.10.9</py4j.version>
-		<org.apache.commons.csv.version>1.8</org.apache.commons.csv.version>
+		<org.apache.commons.lang>1.8</org.apache.commons.lang>
+		<org.apache.commons.csv.version>1.10.0</org.apache.commons.csv.version>
 		<org.apache.commons.collections4.version>4.4</org.apache.commons.collections4.version>
-		<org.apache.commons.io.version>2.11.0</org.apache.commons.io.version>
+		<org.apache.commons.io.version>2.13.0</org.apache.commons.io.version>
+		<org.apache.commons.lang.version>3.12.0</org.apache.commons.lang.version>
 		<osm4j-core.version>0.1.0</osm4j-core.version>
 		<osm4j-xml.version>0.1.3</osm4j-xml.version>
 		<osm4j-pbf.version>0.1.0</osm4j-pbf.version>
@@ -184,6 +186,12 @@
 			  <groupId>commons-io</groupId>
 			  <artifactId>commons-io</artifactId>
 			  <version>${org.apache.commons.io.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${org.apache.commons.lang.version}</version>
 			</dependency>
 
 			<dependency>
