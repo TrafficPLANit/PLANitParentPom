@@ -19,7 +19,7 @@
 	</organization>
 
 	<properties>
-		
+
 		<!-- General properties -->
 		<planit.website.url>https://www.goplanit.org</planit.website.url>
 		<planit.github.url>https:/www.github.com/trafficplanit/</planit.github.url>
