@@ -18,61 +18,63 @@
 		<url>https://www.goplanit.org</url>
 	</organization>
 
-	<properties>
+    <properties>
 
-		<!-- General properties -->
-		<planit.website.url>https://www.goplanit.org</planit.website.url>
-		<planit.github.url>https:/www.github.com/trafficplanit/</planit.github.url>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- General properties -->
+        <planit.website.url>https://www.goplanit.org</planit.website.url>
+        <planit.github.url>https:/www.github.com/trafficplanit/</planit.github.url>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<!-- Maven plugin versions -->
-		<maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
-		<maven.shade.plugin.version>3.2.4</maven.shade.plugin.version>
-		<maven.source.plugin.version>3.2.0</maven.source.plugin.version>
-		<maven.jar.plugin.version>3.2.0</maven.jar.plugin.version>
-		<maven.jaxb2.plugin.version>2.5.0</maven.jaxb2.plugin.version>
-		<maven.replacer.plugin.version>1.5.3</maven.replacer.plugin.version>
-		<maven.resources.plugin.version>3.1.0</maven.resources.plugin.version>
-		<maven.dependency.plugin.version>3.1.2</maven.dependency.plugin.version>
+        <!-- Maven plugin versions -->
+        <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
+        <maven.shade.plugin.version>3.2.4</maven.shade.plugin.version>
+        <maven.source.plugin.version>3.2.0</maven.source.plugin.version>
+        <maven.jar.plugin.version>3.2.0</maven.jar.plugin.version>
+        <maven.jaxb2.plugin.version>2.5.0</maven.jaxb2.plugin.version>
+        <maven.replacer.plugin.version>1.5.3</maven.replacer.plugin.version>
+        <maven.resources.plugin.version>3.1.0</maven.resources.plugin.version>
+        <maven.dependency.plugin.version>3.1.2</maven.dependency.plugin.version>
 
-		<!-- Maven plugin properties -->
-		<maven.compiler.java.version>11</maven.compiler.java.version>
+        <!-- Maven plugin properties -->
+        <maven.compiler.java.version>11</maven.compiler.java.version>
 
-		<!-- PLANit repository versions -->
-		<planitutils.version>${project.version}</planitutils.version>
-		<planit.version>${project.version}</planit.version>
-		<planitio.version>${project.version}</planitio.version>
-		<planitxml.version>${project.version}</planitxml.version>
-		<planittntp.version>${project.version}</planittntp.version>
-		<planitosm.version>${project.version}</planitosm.version>
-		<planitmatsim.version>${project.version}</planitmatsim.version>
-		<planitgtfs.version>${project.version}</planitgtfs.version>
-		<planitgeoio.version>${project.version}</planitgeoio.version>
-		<planitj2py.version>${project.version}</planitj2py.version>
+        <!-- PLANit repository versions -->
+        <planitutils.version>${project.version}</planitutils.version>
+        <planit.version>${project.version}</planit.version>
+        <planitio.version>${project.version}</planitio.version>
+        <planitxml.version>${project.version}</planitxml.version>
+        <planittntp.version>${project.version}</planittntp.version>
+        <planitosm.version>${project.version}</planitosm.version>
+        <planitmatsim.version>${project.version}</planitmatsim.version>
+        <planitgtfs.version>${project.version}</planitgtfs.version>
+        <planitgeoio.version>${project.version}</planitgeoio.version>
+        <planitj2py.version>${project.version}</planitj2py.version>
 
-		<!-- third party repository versions -->
-		<geotools.version>24.6</geotools.version>
-		<ojalgo.version>46.3.0</ojalgo.version>
-		<py4j.version>0.10.9</py4j.version>
-		<org.apache.commons.lang>1.8</org.apache.commons.lang>
-		<org.apache.commons.csv.version>1.10.0</org.apache.commons.csv.version>
-		<org.apache.commons.collections4.version>4.4</org.apache.commons.collections4.version>
-		<org.apache.commons.io.version>2.13.0</org.apache.commons.io.version>
-		<org.apache.commons.lang.version>3.12.0</org.apache.commons.lang.version>
-		<osm4j-core.version>0.1.0</osm4j-core.version>
-		<osm4j-xml.version>0.1.3</osm4j-xml.version>
-		<osm4j-pbf.version>0.1.0</osm4j-pbf.version>
-		<xmlunit.version>2.2.1</xmlunit.version>
-		<hamcrest_test.version>2.1</hamcrest_test.version>
-		<wagon-ftp.version>3.4.3</wagon-ftp.version>
-		
-		<!-- core Java versions -->
-		<javax.version>1.3.2</javax.version>
-		<junit.version>5.7.1</junit.version>
-		<maven.jaxb2.plugin.version>0.15.1</maven.jaxb2.plugin.version>
-		<maven.surefire.plugin.version>3.0.0</maven.surefire.plugin.version>
+        <!-- third party repository versions -->
+        <geotools.version>24.6</geotools.version>
+        <ojalgo.version>46.3.0</ojalgo.version>
+        <py4j.version>0.10.9</py4j.version>
+        <org.apache.commons.lang>1.8</org.apache.commons.lang>
+        <org.apache.commons.csv.version>1.10.0</org.apache.commons.csv.version>
+        <org.apache.commons.collections4.version>4.4</org.apache.commons.collections4.version>
+        <org.apache.commons.io.version>2.13.0</org.apache.commons.io.version>
+        <org.apache.commons.lang.version>3.12.0</org.apache.commons.lang.version>
+        <osm4j-core.version>0.1.0</osm4j-core.version>
+        <osm4j-xml.version>0.1.3</osm4j-xml.version>
+        <osm4j-pbf.version>0.1.0</osm4j-pbf.version>
+        <xmlunit.version>2.2.1</xmlunit.version>
+        <hamcrest_test.version>2.1</hamcrest_test.version>
+        <wagon-ftp.version>3.4.3</wagon-ftp.version>
 
-	</properties>
+        <!-- core Java versions -->
+        <javax.version>1.3.2</javax.version>
+        <junit.version>5.7.1</junit.version>
+        <maven.jaxb2.plugin.version>0.15.1</maven.jaxb2.plugin.version>
+        <maven.surefire.plugin.version>3.0.0</maven.surefire.plugin.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+
+    </properties>
 
 	<!-- Potential dependencies used by children. When no dependency specified, 
 		it is not injected. If no version or is specified, they inherit the version 
