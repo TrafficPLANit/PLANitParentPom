@@ -53,8 +53,9 @@
         <!-- third party repository versions -->
 		<geotools.gtapi.version>33.1</geotools.gtapi.version>
         <geotools.gtmain.version>33.1</geotools.gtmain.version>
-		<geotools.jts.version>1.16.0</geotools.jts.version>
+		<geotools.jts.version>1.19.0</geotools.jts.version>
 		<geotools.gtref.version>33.1</geotools.gtref.version>
+		<geotools.geoapi.version>3.0.1</geotools.geoapi.version>
 		<geotools.shape.version>33.1</geotools.shape.version>
 		<geotools.geopkg.version>33.1</geotools.geopkg.version>
 		<geotools.epsg.version>33.1</geotools.epsg.version>
@@ -162,6 +163,11 @@
 				<groupId>org.geotools</groupId>
 				<artifactId>gt-main</artifactId>
 				<version>${geotools.gtmain.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.locationtech.jts</groupId>
+				<artifactId>jts-core</artifactId>
+				<version>${geotools.jts.version}</version>
 			</dependency>
 
 			<!-- required for the CoordinateReferenceSystem among other things -->
