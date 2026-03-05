@@ -59,6 +59,7 @@
 		<geotools.shape.version>33.1</geotools.shape.version>
 		<geotools.geopkg.version>33.1</geotools.geopkg.version>
 		<geotools.epsg.version>33.1</geotools.epsg.version>
+		<dbf.jamel.version>0.3.0</dbf.jamel.version>
         <ojalgo.version>46.3.0</ojalgo.version>
         <py4j.version>0.10.9</py4j.version>
         <org.apache.commons.lang>1.8</org.apache.commons.lang>
@@ -182,6 +183,13 @@
 				<groupId>org.geotools</groupId>
 				<artifactId>gt-shapefile</artifactId>
 				<version>${geotools.shape.version}</version>
+			</dependency>
+
+			<!-- needed in case we must bypass standard DBF reader in geotools because it does not support features -->
+			<dependency>
+				<groupId>org.jamel.dbf</groupId>
+				<artifactId>dbf-reader</artifactId>
+				<version>${dbf.jamel.version}</version>
 			</dependency>
 
 			<dependency>
