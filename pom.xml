@@ -78,6 +78,9 @@
         <osm4j-pbf.version>0.1.0</osm4j-pbf.version>
         <hamcrest_test.version>2.1</hamcrest_test.version>
         <wagon-ftp.version>3.4.3</wagon-ftp.version>
+		<apache.parquet.version>1.13.1</apache.parquet.version>
+		<apache.hadoop.common.version>3.3.6</apache.hadoop.common.version>
+		<parquet.codec.snappy.version>1.1.10.5</parquet.codec.snappy.version>
 
 		<!-- xml -->
 		<xmlunit.version>2.2.1</xmlunit.version>
@@ -300,6 +303,31 @@
 				<groupId>de.topobyte</groupId>
 				<artifactId>osm4j-pbf</artifactId>
 				<version>${osm4j-pbf.version}</version>
+			</dependency>
+
+			<!-- hadoop parquet reader
+				since this is married to the hadoop common, make sure to exclude hadoop client as an exclusion to avoid
+				all the cluster overhead you do not want
+			-->
+			<dependency>
+				<groupId>org.apache.parquet</groupId>
+				<artifactId>parquet-hadoop</artifactId>
+				<version>${apache.parquet.version}</version>
+			</dependency>
+
+			<!-- parquet reader requires some parts from hadoop, so unavoidable to include this it seems
+				 highly recommended to strip out as much when adding this dependency to avoid bloat -->
+			<dependency>
+				<groupId>org.apache.hadoop</groupId>
+				<artifactId>hadoop-common</artifactId>
+				<version>${apache.hadoop.common.version}</version>
+			</dependency>
+
+			<!-- Pure-Java lightweight compression codec for parquet -->
+			<dependency>
+				<groupId>org.xerial.snappy</groupId>
+				<artifactId>snappy-java</artifactId>
+				<version>${parquet.codec.snappy.version}</version>
 			</dependency>
 
 			<!-- XML JAXb generator -->
