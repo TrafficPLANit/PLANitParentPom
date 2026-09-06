@@ -2,6 +2,10 @@
 
 PLANitParentPom releases.  The repository holding the parent pom file for PLANit's Maven based builds.
 
+## 0.5.0
+
+* Updated Py4J dependency version to 0.10.9.9
+
 ## 0.4.0
 
 * #8 update to JUnit5

@@ -66,7 +66,7 @@
 		<geotools.epsg.version>33.1</geotools.epsg.version>
 		<dbf.jamel.version>0.3.0</dbf.jamel.version>
         <ojalgo.version>46.3.0</ojalgo.version>
-        <py4j.version>0.10.9</py4j.version>
+        <py4j.version>0.10.9.9</py4j.version>
         <org.apache.commons.lang>1.8</org.apache.commons.lang>
         <org.apache.commons.csv.version>1.10.0</org.apache.commons.csv.version>
         <org.apache.commons.collections4.version>4.4</org.apache.commons.collections4.version>
