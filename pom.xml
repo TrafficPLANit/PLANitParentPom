@@ -66,6 +66,7 @@
 		<geotools.epsg.version>33.1</geotools.epsg.version>
 		<dbf.jamel.version>0.3.0</dbf.jamel.version>
         <ojalgo.version>46.3.0</ojalgo.version>
+        <snakeyaml.engine.version>3.2</snakeyaml.engine.version>
         <py4j.version>0.10.9</py4j.version>
         <org.apache.commons.lang>1.8</org.apache.commons.lang>
         <org.apache.commons.csv.version>1.10.0</org.apache.commons.csv.version>
@@ -221,6 +222,12 @@
 				<groupId>org.ojalgo</groupId>
 				<artifactId>ojalgo</artifactId>
 				<version>${ojalgo.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.snakeyaml</groupId>
+				<artifactId>snakeyaml-engine</artifactId>
+				<version>${snakeyaml.engine.version}</version>
 			</dependency>
 
 			<dependency>
